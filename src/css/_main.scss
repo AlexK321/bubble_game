@@ -1,0 +1,46 @@
+body {
+  width: 100%;
+  background-color:#B0BEC5;
+  margin: 0 auto;
+  color: black;
+}
+
+.wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+  height: 100vh;
+  background-color:rgb(29, 85, 43);
+  font-size: 22px;
+  font-family: "GothamSS";
+  border: 2px solid black;
+  header {
+    background-image: url("./../assets/images/code_phone.png");
+    background-size: cover;
+    width: 100%;
+    
+    
+  }
+  main {
+    width: 100%;
+    .game_area {
+      display: flex;
+      
+      .area_item {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+        margin: 5px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  
+}
+
+@media screen and (max-width: 530px) {
+  
+}
+ 
