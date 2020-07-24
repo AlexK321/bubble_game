@@ -7,7 +7,7 @@ export function createGameArea() {
   for (let i = 0; i < 9; i++) {
     areaItems[i] = document.createElement('div');
     areaItems[i].className = 'area_item';
-    areaItems[i].id = `area_item_${i}`;
+    areaItems[i].id = i;
     gameArea.append(areaItems[i]);
   }
 }

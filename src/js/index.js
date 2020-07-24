@@ -1,26 +1,13 @@
 
 import '../css/style.scss';
-
 import {createGameArea} from './createGameArea';
+import {gameClick, emergenceDog} from './gameFunction';
 
-let gameArea = document.getElementById('gameArea');
 export let areaItems = [];
-let random = 0
+let gameArea = document.getElementById('gameArea');
+
 
 createGameArea();
+setInterval(emergenceDog,1000);
 
-function emergenceDog() {
-  areaItems[random].style.background = 'blue'  
-  random = Math.round(Math.random() * 8.49);
-  areaItems[random].style.background = 'red'
-}
-
-setInterval(emergenceDog,1000)
-
-function gameClick() {
-    console.log (event.target.id)
-
-}
-
-
-gameArea.addEventListener("click", () => gameClick());
+gameArea.addEventListener("click", () => {gameClick(event)});
